@@ -2,6 +2,13 @@
   height: var(--header-height);
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: var(--z-fixed);
+  background-color: var(--white-color);
+  box-shadow: 0 0 37px rgba(0, 0, 0, 0.1);
 
   .nav {
     width: 100%;
