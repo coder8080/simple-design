@@ -9,6 +9,10 @@ import Drawing1Background from '../../assets/drawing1-background.png'
 import Drawing1Main from '../../assets/drawing1-main.png'
 import Drawing1Rotated from '../../assets/drawing1-rotated.png'
 
+import Drawing2Background from '../../assets/drawing2-background.png'
+import Drawing2Main from '../../assets/drawing2-main.png'
+import Drawing2Rotated from '../../assets/drawing2-rotated.png'
+
 import Button from '../../components/button/button.component'
 import './homepage.styles.scss'
 
@@ -142,6 +146,56 @@ const Homepage: FC = () => (
           <img
             src={Drawing1Rotated}
             alt="Drawing1-Second-Page"
+            className="drawing-rotated"
+          />
+        </div>
+      </div>
+      <div className="design-container">
+        <div className="text-container">
+          <h2 className="h2 title">Дизайн-проект за 199 000 ₸</h2>
+          <span className="subtitle h3">
+            Срок выполнения: <span className="time">14 дней</span>
+          </span>
+          <p className="text h3">
+            Разработаем планировочное решение вашей квартиры, далее на его
+            основе мы подготовим альбом, состоящий из 12 чертежей, необходимых
+            строителям для ремонта.
+          </p>
+          <div className="points-container">
+            <ul className="points h3">
+              <li className="point">2 варианта планировки + финальный</li>
+              <li className="point">планы демонтажа и монтажа стен</li>
+              <li className="point">розетки, выключатели, освещение</li>
+              <li className="point">сантехника</li>
+              <li className="point">план потолка</li>
+              <li className="point">план пола и плинтусов</li>
+              <li className="point">план дверей</li>
+            </ul>
+          </div>
+          <div className="application-container">
+            <Button>Оставить заявку</Button>
+            <span className="view-example">
+              <div className="icon-container">
+                <img src={Pdf} alt="PDF" />
+              </div>
+              <span className="application-text">Посмотреть пример</span>
+            </span>
+          </div>
+        </div>
+        <div className="drawing-container">
+          <img
+            src={Drawing2Background}
+            alt="Background"
+            className="backround-img"
+          />
+          <img
+            src={Drawing2Main}
+            alt="Drawing2-Main"
+            className="drawing-main"
+          />
+          <img
+            src={Drawing2Rotated}
+            alt="Drawing2-Second-Page"
             className="drawing-rotated"
           />
         </div>

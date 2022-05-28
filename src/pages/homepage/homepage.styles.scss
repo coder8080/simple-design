@@ -149,80 +149,83 @@
       margin-bottom: 70px;
     }
 
+    .text-container {
+      grid-area: text;
+      padding: 0 50px;
+
+      .title {
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        margin-bottom: 1rem;
+        display: block;
+        color: var(--gray-color);
+        font-weight: var(--weight-medium);
+
+        .time {
+          color: var(--text-color);
+        }
+      }
+
+      .text {
+        margin-bottom: 2rem;
+      }
+
+      .points-container {
+        border-left: 1px solid var(--first-color);
+        padding-left: 3rem;
+        font-weight: var(--weight-medium);
+        margin-bottom: 4rem;
+
+        .points {
+          display: block;
+        }
+      }
+
+      .application-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .view-example {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0.5rem;
+
+          .icon-container {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .application-text {
+            color: var(--first-color);
+            font-weight: var(--weight-semi-bold);
+          }
+        }
+      }
+    }
+
+    .drawing-container {
+      grid-area: drawing;
+      overflow: hidden;
+      position: relative;
+    }
+
     .layout-container {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'text drawing';
-
-      .text-container {
-        grid-area: text;
-        padding: 0 50px;
-
-        .title {
-          margin-bottom: 1rem;
-        }
-
-        .subtitle {
-          margin-bottom: 1rem;
-          display: block;
-          color: var(--gray-color);
-          font-weight: var(--weight-medium);
-
-          .time {
-            color: var(--text-color);
-          }
-        }
-
-        .text {
-          margin-bottom: 2rem;
-        }
-
-        .points-container {
-          border-left: 1px solid var(--first-color);
-          padding-left: 3rem;
-          font-weight: var(--weight-medium);
-          margin-bottom: 4rem;
-
-          .points {
-            display: block;
-          }
-        }
-
-        .application-container {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          .view-example {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 0.5rem;
-
-            .icon-container {
-              img {
-                width: 40px;
-                height: 40px;
-              }
-            }
-
-            .application-text {
-              color: var(--first-color);
-              font-weight: var(--weight-semi-bold);
-            }
-          }
-        }
-      }
+      margin-bottom: 100px;
 
       .drawing-container {
-        grid-area: drawing;
-        overflow: hidden;
-        position: relative;
-
         .backround-img {
           position: absolute;
-          display: block;
+          // display: block;
           height: 100%;
           top: 0;
           right: 0;
@@ -240,6 +243,35 @@
           width: 70%;
           top: 20%;
           left: 10%;
+        }
+      }
+    }
+
+    .design-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'drawing text';
+
+      .drawing-container {
+        .backround-img {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+
+        .drawing-main {
+          position: absolute;
+          width: 80%;
+          right: 0;
+          top: 5%;
+        }
+
+        .drawing-rotated {
+          position: absolute;
+          width: 70%;
+          top: 20%;
+          right: 10%;
         }
       }
     }
