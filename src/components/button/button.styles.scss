@@ -1,0 +1,10 @@
+.btn {
+  background-color: var(--first-color);
+  padding: 28px 55px;
+  border-radius: calc((1em + (28px * 2)) / 2);
+  outline: none;
+  border: none;
+  color: var(--white-color);
+  font-weight: var(--weight-semi-bold);
+  font-family: var(--body-font);
+}

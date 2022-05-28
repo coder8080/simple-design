@@ -1,0 +1,96 @@
+.header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+
+  .nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+
+      .logo {
+        font-weight: var(--weight-semi-bold);
+        display: block;
+
+        .logo1 {
+          color: var(--title-color);
+          margin-right: 0.25rem;
+        }
+
+        .logo2 {
+          color: var(--first-color);
+        }
+
+        .description {
+          display: block;
+          font-weight: var(--weight-regular);
+          font-size: var(--small-font-size);
+          color: var(--text-color);
+        }
+      }
+    }
+
+    .menu {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: subgrid;
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 2.5rem;
+
+        .nav-item {
+          color: var(--gray-color);
+        }
+
+        .nav-item.active {
+          position: relative;
+          color: var(--first-color);
+          font-weight: var(--weight-semi-bold);
+
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -0.5rem;
+            right: 0;
+            width: 32px;
+            height: 1px;
+            background-color: var(--first-color);
+          }
+        }
+      }
+
+      .phone-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 0.8rem;
+
+        .text-container {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .phone {
+            color: var(--black-color);
+            font-weight: var(--weight-semi-bold);
+          }
+
+          .description {
+            color: var(--gray-color);
+            font-weight: var(--weight-medium);
+          }
+        }
+      }
+    }
+  }
+}

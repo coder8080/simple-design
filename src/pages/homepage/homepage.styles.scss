@@ -1,0 +1,144 @@
+.homepage {
+  .section {
+    padding-bottom: 100px;
+  }
+
+  .home {
+    .hero {
+      background-image: url('../../assets/hero.png');
+      width: 100%;
+      height: calc(100vh - var(--header-height));
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        width: 60vw;
+        margin-bottom: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+
+        h1 {
+          color: white;
+        }
+      }
+
+      .advantages {
+        background-color: var(--white-color);
+        height: 150px;
+        border-radius: 50px 50px 0 0;
+        position: absolute;
+        left: 10vw;
+        right: 10vw;
+        bottom: 0;
+        padding: 0 5%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 3rem;
+        gap: 1rem;
+
+        .group {
+          display: flex;
+          flex-direction: column;
+          display: flex;
+          flex-direction: row;
+          column-gap: 5%;
+
+          .image-container {
+            img {
+              width: 40px;
+              height: 40px;
+            }
+          }
+
+          .text-container {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            .title {
+              color: var(--title-color);
+              font-weight: var(--weight-medium);
+            }
+
+            .description {
+              color: var(--gray-color);
+              font-weight: var(--weight-medium);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .how-it-works {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      'title image'
+      'steps image';
+
+    .title-container {
+      grid-area: title;
+      text-align: center;
+    }
+
+    .steps-container {
+      grid-area: steps;
+      padding: 4rem 50px 0;
+
+      .steps {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+
+        .step {
+          display: flex;
+
+          .number-container {
+            font-size: 70px;
+            min-width: 120px;
+            font-weight: var(--weight-bold);
+            line-height: 70px;
+            color: var(--first-color-light);
+          }
+
+          .title {
+            font-weight: var(--weight-medium);
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+
+    .image-container {
+      grid-area: image;
+      position: relative;
+      padding-right: 0;
+      margin-left: 40px;
+      background-image: url('../../assets/room1.png');
+      background-size: cover;
+      background-position: center;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+
+      .small-img {
+        position: absolute;
+        left: -40px;
+        top: 20%;
+        height: 60%;
+      }
+    }
+  }
+}

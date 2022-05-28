@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700&display=swap');
+
+:root {
+  --body-font: 'Montserrat Alternates', sans-serif;
+  --h1-font-size: 2.5rem;
+  --h1-line-height: 3.0475rem;
+  --h2-font-size: 1.875rem;
+  --h2-line-height: 2.285625rem;
+  --h3-font-size: 1.25rem;
+  --h3-line-height: 1.52375rem;
+  --normal-font-size: 0.9375rem;
+  --normal-line-height: 1.143125rem;
+  --small-font-size: 0.625rem;
+  --small-line-height: 0.761875rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+
+  --white-color: #fff;
+  --first-color: #bd7048;
+  --first-color-light: rgba(189, 112, 72, 0.2);
+  --title-color: #262626;
+  --text-color: #181818;
+  --black-color: #3b3b3b;
+  --gray-color: rgba(59, 59, 59, 0.5);
+
+  --header-height: 100px;
+
+  --z-fixed: 100;
+  --z-tooltip: 10;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  line-height: var(--normal-line-height);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+}
+
+.h1 {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+}
+
+.h2 {
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
+}
+
+.h3 {
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+a {
+  text-decoration: none;
+}
