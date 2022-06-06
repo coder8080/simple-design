@@ -1,0 +1,37 @@
+.swiper-button {
+  @media screen and (min-width: 560px) {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-fixed);
+  background-color: var(--white-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  top: calc(50% - 30px - 1rem);
+
+  &.next {
+    right: 0;
+  }
+
+  &.prev {
+    left: 0;
+  }
+
+  &.next::after {
+    content: url('../../assets/right.svg');
+  }
+
+  &.prev::after {
+    content: url('../../assets/left.svg');
+  }
+}

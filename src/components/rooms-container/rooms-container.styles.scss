@@ -1,0 +1,49 @@
+.rooms-container {
+  width: 100%;
+  margin-bottom: 5rem;
+
+  .swiper {
+    padding: 0 20px !important;
+
+    .swiper-wrapper {
+      margin-right: 20px;
+    }
+  }
+
+  .swiper-slide {
+    max-width: 400px;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    content: '';
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+  }
+
+  .swiper-button-next::after {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: auto;
+    bottom: auto;
+    right: -100%;
+    background-color: rebeccapurple;
+  }
+
+  .swiper-button-next::before,
+  .swiper-button-prev::before {
+    display: block;
+    position: absolute;
+  }
+
+  .swiper-button-next::before {
+    content: url('../../assets/right.svg');
+  }
+
+  .swiper-button-prev::before {
+    content: url('../../assets/left.svg');
+  }
+}

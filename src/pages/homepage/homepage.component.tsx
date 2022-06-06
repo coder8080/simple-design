@@ -13,7 +13,10 @@ import Drawing2Background from '../../assets/drawing2-background.png'
 import Drawing2Main from '../../assets/drawing2-main.png'
 import Drawing2Rotated from '../../assets/drawing2-rotated.png'
 
+import CheckList from '../../assets/checklist.png'
 import Button from '../../components/button/button.component'
+import RoomsPreview from '../../components/rooms-preview/rooms-preview.component'
+
 import './homepage.styles.scss'
 
 const Homepage: FC = () => (
@@ -100,7 +103,7 @@ const Homepage: FC = () => (
         <img src={Room1Small} className="small-img" alt="Room" />
       </div>
     </section>
-    <section className="section out-services">
+    <section className="section our-services">
       <h1 className="section-title h1">Наши услуги</h1>
       <div className="layout-container">
         <div className="text-container">
@@ -200,6 +203,27 @@ const Homepage: FC = () => (
           />
         </div>
       </div>
+    </section>
+    <section className="section planning-repair">
+      <div className="image-container">
+        <img src={CheckList} alt="checklist" className="checklist" />
+      </div>
+      <div className="text-container">
+        <h2 className="h2 section-title">Планируете ремонт?</h2>
+        <p className="text h3">
+          Ответьте на несколько вопросов и получите бесплатный чек-лист по
+          ремонту
+        </p>
+        <Button>Получить чек-лист</Button>
+      </div>
+    </section>
+    <section className="section rooms-design">
+      <h1 className="h1 section-title">Дизайн комнат</h1>
+      <span className="h3 description">
+        Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в
+        интерьере, названиями, артикулами, цветом стен и так далее.
+      </span>
+      <RoomsPreview />
     </section>
   </div>
 )

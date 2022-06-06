@@ -143,7 +143,7 @@
     }
   }
 
-  .out-services {
+  .our-services {
     .section-title {
       text-align: center;
       margin-bottom: 70px;
@@ -225,7 +225,6 @@
       .drawing-container {
         .backround-img {
           position: absolute;
-          // display: block;
           height: 100%;
           top: 0;
           right: 0;
@@ -251,6 +250,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-areas: 'drawing text';
+      gap: 2rem;
 
       .drawing-container {
         .backround-img {
@@ -274,6 +274,49 @@
           right: 10%;
         }
       }
+    }
+  }
+
+  .planning-repair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 50%;
+      }
+    }
+
+    .text-container {
+      .section-title {
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        margin-bottom: 1.5rem;
+        display: block;
+        color: gray;
+      }
+    }
+  }
+
+  .rooms-design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+
+    .section-title {
+      margin-bottom: 3rem;
+    }
+
+    .description {
+      margin-bottom: 2rem;
     }
   }
 }
