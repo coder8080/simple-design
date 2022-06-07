@@ -309,7 +309,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
     .section-title {
       margin-bottom: 3rem;
@@ -317,6 +318,31 @@
 
     .description {
       margin-bottom: 2rem;
+    }
+  }
+
+  .what-you-like {
+    .what-you-like-container {
+      background-image: url('../../assets/background.png');
+      background-position: center;
+      background-size: cover;
+      padding: 6rem;
+
+      .what-you-like-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 100%;
+        width: 500px;
+
+        .section-title {
+          color: var(--white-color);
+        }
+
+        .description {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
     }
   }
 }

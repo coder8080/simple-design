@@ -224,6 +224,22 @@ const Homepage: FC = () => (
         интерьере, названиями, артикулами, цветом стен и так далее.
       </span>
       <RoomsPreview />
+      <Button>К каталогу комнат</Button>
+    </section>
+    <section className="section what-you-like">
+      <div className="what-you-like-container">
+        <div className="what-you-like-card">
+          <h2 className="h2 section-title">
+            Давайте определим, что вам нравится
+          </h2>
+          <p className="description h3">
+            Пройдите короткий тест и мы покажем подходящие вам стилевые решения
+          </p>
+          <div className="button-container">
+            <Button>Пройти тест</Button>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 )
