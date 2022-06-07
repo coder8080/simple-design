@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7c2978b0.css",
+    "main.js": "/static/js/main.b756456c.js",
+    "static/media/hero.png": "/static/media/hero.6ca3c70187e54a2462de.png",
+    "static/media/room1.png": "/static/media/room1.528e891b200bb905ec3d.png",
+    "static/media/childrens-blue.png": "/static/media/childrens-blue.32fbc1984f715e624afd.png",
+    "static/media/livingroom-ira.png": "/static/media/livingroom-ira.3121d97c0588f21cb248.png",
+    "static/media/corridor-irina.png": "/static/media/corridor-irina.c7c4b855f65952c2f358.png",
+    "static/media/livingroom-nyrs.png": "/static/media/livingroom-nyrs.18ab32ad6992af195a4d.png",
+    "static/media/childrens-pink.png": "/static/media/childrens-pink.91faf032b9a99159358f.png",
+    "static/media/childrens-bright.png": "/static/media/childrens-bright.0639ac64b2bf4bef49a4.png",
+    "static/media/corridor-kadir.png": "/static/media/corridor-kadir.08a95474188f9179aebb.png",
+    "static/media/livingroom-watercolor.png": "/static/media/livingroom-watercolor.72f1a4448712f0022655.png",
+    "static/media/room1-small.png": "/static/media/room1-small.4955c198b1b1555f92cf.png",
+    "static/media/drawing-1.png": "/static/media/drawing-1.99a282901a62d35cf537.png",
+    "static/media/corridor-watercolor.png": "/static/media/corridor-watercolor.6dd33b9eb37f94c082b2.png",
+    "static/media/drawing-2.png": "/static/media/drawing-2.d3fbc69ae064da981e7d.png",
+    "static/media/background.png": "/static/media/background.35caed6fa3347ff97d5b.png",
+    "static/media/drawing2-background.png": "/static/media/drawing2-background.9137cdb5ac0f0593c489.png",
+    "static/media/drawing1-background.png": "/static/media/drawing1-background.909ba7eff184f46163e6.png",
+    "static/media/checklist.png": "/static/media/checklist.9582865aed18b6acf9b0.png",
+    "static/media/pdf.svg": "/static/media/pdf.635ba99aee28829551aeb9b46710da80.svg",
+    "static/media/clock.svg": "/static/media/clock.576eef4093472bdb57525e170bc75874.svg",
+    "static/media/wallet.svg": "/static/media/wallet.0201ab602a73aead68127688e5ac7425.svg",
+    "static/media/cross.svg": "/static/media/cross.63c13a62e1265c48c7e15860807280dd.svg",
+    "static/media/bag.svg": "/static/media/bag.3491b11eab16434dc59e6794f5e7c946.svg",
+    "static/media/right.svg": "/static/media/right.6b8d4182107e1c2f2831.svg",
+    "static/media/left.svg": "/static/media/left.c4a4de0b0800308c1f5c.svg",
+    "static/media/mark.svg": "/static/media/mark.05c98fbbb75532c93f037b22604970be.svg",
+    "static/media/phone.svg": "/static/media/phone.08bf64fb204c88617a0d9cb8af599472.svg",
+    "index.html": "/index.html",
+    "static/media/menu.svg": "/static/media/menu.a487a9db9d274585b7ecb765aff4e6e2.svg",
+    "main.7c2978b0.css.map": "/static/css/main.7c2978b0.css.map",
+    "main.b756456c.js.map": "/static/js/main.b756456c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c2978b0.css",
+    "static/js/main.b756456c.js"
+  ]
+}
