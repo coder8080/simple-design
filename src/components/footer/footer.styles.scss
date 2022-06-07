@@ -15,10 +15,27 @@
   .info {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'logo pages info contact';
 
     .group {
       display: flex;
       justify-content: center;
+    }
+
+    .group-logo {
+      grid-area: logo;
+    }
+
+    .grou-pages {
+      grid-area: pages;
+    }
+
+    .group-info {
+      grid-area: info;
+    }
+
+    .group-contact {
+      grid-area: contact;
     }
   }
 
@@ -28,5 +45,15 @@
     background-color: var(--title-color);
     color: var(--white-color);
     padding: 40px 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    gap: 2rem;
+
+    .info {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'pages info' 'logo contact';
+      row-gap: 2rem;
+    }
   }
 }

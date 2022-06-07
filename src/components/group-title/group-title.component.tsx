@@ -6,7 +6,7 @@ interface GroupTitleProps {
 }
 
 const GroupTitle: FC<GroupTitleProps> = ({ children }) => (
-  <div className="group-title container">
+  <div className="group-title">
     <span className="text">{children}</span>
     <div className="line"></div>
   </div>

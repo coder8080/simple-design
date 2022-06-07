@@ -1,7 +1,5 @@
 import { FC } from 'react'
-import { Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { useSwiper } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
 

@@ -66,8 +66,8 @@ const Homepage: FC = () => (
       <div className="title-container">
         <h1 className="h1 section-title">Как это работает?</h1>
       </div>
-      <div className="steps-container">
-        <ul className=" steps">
+      <div className="steps-container section-padding">
+        <ul className="steps">
           <li className="step">
             <div className="number-container">01</div>
             <div className="text-container">
@@ -106,7 +106,7 @@ const Homepage: FC = () => (
     <section className="section our-services">
       <h1 className="section-title h1">Наши услуги</h1>
       <div className="layout-container">
-        <div className="text-container">
+        <div className="text-container section-padding">
           <h2 className="h2 title">Планировка за 99 000 ₸</h2>
           <span className="subtitle h3">
             Срок выполнения: <span className="time">5 дней</span>
@@ -145,7 +145,7 @@ const Homepage: FC = () => (
         </div>
       </div>
       <div className="design-container">
-        <div className="text-container">
+        <div className="text-container section-padding">
           <h2 className="h2 title">Дизайн-проект за 199 000 ₸</h2>
           <span className="subtitle h3">
             Срок выполнения: <span className="time">14 дней</span>

@@ -92,4 +92,8 @@ a {
 
 .container {
   padding: 0 50px;
+
+  @media screen and (max-width: 800px) {
+    padding: 0 30px;
+  }
 }

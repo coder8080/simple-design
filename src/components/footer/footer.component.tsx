@@ -6,10 +6,10 @@ import './footer.styles.scss'
 const Footer: FC = () => (
   <footer className="footer">
     <div className="info">
-      <div className="group">
+      <div className="group group-logo">
         <Logo />
       </div>
-      <div className="group">
+      <div className="group group-pages">
         <div className="group-container">
           <ul className="links">
             <li className="link">Главная</li>
@@ -19,7 +19,7 @@ const Footer: FC = () => (
           </ul>
         </div>
       </div>
-      <div className="group">
+      <div className="group group-info">
         <div className="group-container">
           <ul className="links">
             <li className="link">Политика конфиденциальности</li>
@@ -27,7 +27,7 @@ const Footer: FC = () => (
           </ul>
         </div>
       </div>
-      <div className="group">
+      <div className="group group-contact">
         <div className="group-container">
           <Contact />
         </div>
