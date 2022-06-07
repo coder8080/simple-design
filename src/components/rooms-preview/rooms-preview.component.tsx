@@ -6,7 +6,7 @@ import './rooms-preview.styles.scss'
 const RoomsPreview: FC = () => (
   <div className="rooms-preview">
     {Object.entries(ROOMS_DATA).map(([key, group]) => (
-      <RoomsContainer {...group} />
+      <RoomsContainer key={key} {...group} />
     ))}
   </div>
 )

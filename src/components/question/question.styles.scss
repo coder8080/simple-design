@@ -1,0 +1,45 @@
+.question {
+  margin-bottom: 1rem;
+
+  &.opened {
+    .heading .button-container .plus {
+      transform: rotate(45deg);
+      path {
+        fill: var(--first-color);
+      }
+    }
+
+    .content {
+      height: auto;
+    }
+  }
+
+  .heading {
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+
+    .button-container .plus {
+      path {
+        transition: 0.3s;
+        fill: black;
+      }
+      transition: 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    overflow: hidden;
+    transition: 0.3s;
+    height: 0;
+
+    .text {
+      font-weight: var(--weight-medium);
+      color: rgba(38, 38, 38, 0.7);
+    }
+  }
+}

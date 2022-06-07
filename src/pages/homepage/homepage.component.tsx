@@ -1,4 +1,10 @@
 import { FC } from 'react'
+
+import CheckList from '../../assets/checklist.png'
+import Button from '../../components/button/button.component'
+import RoomsPreview from '../../components/rooms-preview/rooms-preview.component'
+import Question from '../../components/question/question.component'
+
 import Clock from '../../assets/clock.svg'
 import Mark from '../../assets/mark.svg'
 import Wallet from '../../assets/wallet.svg'
@@ -12,10 +18,6 @@ import Drawing1Rotated from '../../assets/drawing1-rotated.png'
 import Drawing2Background from '../../assets/drawing2-background.png'
 import Drawing2Main from '../../assets/drawing2-main.png'
 import Drawing2Rotated from '../../assets/drawing2-rotated.png'
-
-import CheckList from '../../assets/checklist.png'
-import Button from '../../components/button/button.component'
-import RoomsPreview from '../../components/rooms-preview/rooms-preview.component'
 
 import './homepage.styles.scss'
 
@@ -217,7 +219,7 @@ const Homepage: FC = () => (
         <Button>Получить чек-лист</Button>
       </div>
     </section>
-    <section className="section rooms-design">
+    <section className="section section-padding rooms-design">
       <h1 className="h1 section-title">Дизайн комнат</h1>
       <span className="h3 description">
         Выбирая дизайн комнаты, вы получаете смету со списком всех предметов в
@@ -240,6 +242,16 @@ const Homepage: FC = () => (
           </div>
         </div>
       </div>
+    </section>
+    <section className="section section-padding questions">
+      <h1 className="h1 section-title">Часто задаваемые вопросы</h1>
+      {Array.from(Array(4).keys()).map((key) => (
+        <Question
+          key={key}
+          title="Вопрос"
+          text="Lorem nostrud culpa laborum ut minim adipisicing magna amet aliqua quis est. Est cupidatat enim cillum aliqua adipisicing eu. Cillum occaecat qui consectetur cillum aliquip sint exercitation consequat irure. Lorem tempor nulla minim laborum labore officia tempor. Ullamco do ullamco et qui et aliquip nulla et. Pariatur pariatur magna commodo nisi cillum sunt exercitation reprehenderit eu sit aliqua culpa."
+        ></Question>
+      ))}
     </section>
   </div>
 )
