@@ -18,27 +18,6 @@
     .logo-container {
       display: flex;
       justify-content: center;
-
-      .logo {
-        font-weight: var(--weight-semi-bold);
-        display: block;
-
-        .logo1 {
-          color: var(--title-color);
-          margin-right: 0.25rem;
-        }
-
-        .logo2 {
-          color: var(--first-color);
-        }
-
-        .description {
-          display: block;
-          font-weight: var(--weight-regular);
-          font-size: var(--small-font-size);
-          color: var(--text-color);
-        }
-      }
     }
 
     .menu {
@@ -71,30 +50,6 @@
             width: 32px;
             height: 1px;
             background-color: var(--first-color);
-          }
-        }
-      }
-
-      .phone-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        gap: 0.8rem;
-
-        .text-container {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-
-          .phone {
-            color: var(--black-color);
-            font-weight: var(--weight-semi-bold);
-          }
-
-          .description {
-            color: var(--gray-color);
-            font-weight: var(--weight-medium);
           }
         }
       }

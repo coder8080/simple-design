@@ -1,0 +1,23 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.8rem;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .phone {
+      color: var(--black-color);
+      font-weight: var(--weight-semi-bold);
+    }
+
+    .description {
+      color: var(--gray-color);
+      font-weight: var(--weight-medium);
+    }
+  }
+}

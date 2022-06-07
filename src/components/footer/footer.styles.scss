@@ -1,0 +1,32 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-weight: var(--weight-medium);
+  color: rgba(33, 33, 33, 0.5);
+  gap: 4rem;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    .group {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--title-color);
+    color: var(--white-color);
+    padding: 40px 0;
+  }
+}
