@@ -30,6 +30,21 @@
 
   --z-fixed: 100;
   --z-tooltip: 10;
+
+  @media screen and (max-width: 800px) {
+    --h1-font-size: 1.5625rem;
+    --h1-line-height: 1.905rem;
+    --h2-font-size: 1.5625rem;
+    --h2-line-height: 1.905rem;
+    --h3-font-size: 0.9375rem;
+    --h3-line-height: 1.143125rem;
+    --normal-font-size: 0.9375rem;
+    --normal-line-height: 1.143125rem;
+    --small-font-size: 0.625rem;
+    --small-line-height: 0.761875rem;
+
+    --header-height: 80px;
+  }
 }
 
 * {

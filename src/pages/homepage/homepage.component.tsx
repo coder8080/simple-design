@@ -12,12 +12,10 @@ import Room1Small from '../../assets/room1-small.png'
 import Pdf from '../../assets/pdf.svg'
 
 import Drawing1Background from '../../assets/drawing1-background.png'
-import Drawing1Main from '../../assets/drawing1-main.png'
-import Drawing1Rotated from '../../assets/drawing1-rotated.png'
+import Drawing1 from '../../assets/drawing-1.png'
 
 import Drawing2Background from '../../assets/drawing2-background.png'
-import Drawing2Main from '../../assets/drawing2-main.png'
-import Drawing2Rotated from '../../assets/drawing2-rotated.png'
+import Drawing2 from '../../assets/drawing-2.png'
 
 import './homepage.styles.scss'
 
@@ -143,16 +141,7 @@ const Homepage: FC = () => (
             alt="Background"
             className="backround-img"
           />
-          <img
-            src={Drawing1Main}
-            alt="Drawing1-Main"
-            className="drawing-main"
-          />
-          <img
-            src={Drawing1Rotated}
-            alt="Drawing1-Second-Page"
-            className="drawing-rotated"
-          />
+          <img src={Drawing1} alt="Drawing 1" className="main-img" />
         </div>
       </div>
       <div className="design-container">
@@ -193,16 +182,7 @@ const Homepage: FC = () => (
             alt="Background"
             className="backround-img"
           />
-          <img
-            src={Drawing2Main}
-            alt="Drawing2-Main"
-            className="drawing-main"
-          />
-          <img
-            src={Drawing2Rotated}
-            alt="Drawing2-Second-Page"
-            className="drawing-rotated"
-          />
+          <img src={Drawing2} alt="Drawing 2" className="main-img" />
         </div>
       </div>
     </section>
