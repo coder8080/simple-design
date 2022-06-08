@@ -20,7 +20,7 @@ import Drawing2 from '../../assets/drawing-2.png'
 import './homepage.styles.scss'
 
 const Homepage: FC = () => (
-  <div className="homepage">
+  <div className="homepage page">
     <section className="section home">
       <div className="hero">
         <div className="content">

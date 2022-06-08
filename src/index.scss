@@ -63,6 +63,7 @@ body {
   font-size: var(--normal-font-size);
   line-height: var(--normal-line-height);
   color: var(--text-color);
+  min-height: 100vh;
 }
 
 h1,
@@ -96,4 +97,19 @@ a {
   @media screen and (max-width: 800px) {
     padding: 0 30px;
   }
+}
+
+.app {
+  padding-top: var(--header-height);
+  min-height: 100vh;
+  max-width: 100vw;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'content' 'space' 'footer';
+}
+
+.page {
+  width: 100vw;
+  grid-area: content;
 }
