@@ -52,9 +52,16 @@
     gap: 2rem;
 
     .info {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       grid-template-areas: 'pages info' 'logo contact';
       row-gap: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .info {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'pages' 'info' 'logo' 'contact';
     }
   }
 }
