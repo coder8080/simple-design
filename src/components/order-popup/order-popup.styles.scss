@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 0.5rem;
   cursor: pointer;
   background-color: var(--white-color);
@@ -136,6 +137,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-bottom: 50px;
 
     .order-card {
       padding: 50px;
@@ -144,6 +146,11 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      @media screen and (max-width: 500px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
 
       .order-items {
         list-style: none;
@@ -179,6 +186,7 @@
 
           .price {
             color: rgba(0, 0, 0, 0.5);
+            flex-shrink: 0;
           }
         }
       }
@@ -217,6 +225,75 @@
       font-weight: var(--weight-medium);
       color: rgba(38, 38, 38, 0.5);
       padding: 0 30px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'description' 'checkout';
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .order-popup {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .order-description .items-list {
+      padding-left: 10px;
+
+      .item {
+        .description-items {
+          padding-left: 30px;
+        }
+      }
+    }
+
+    .order-card {
+      .buttons {
+        padding: 0 !important;
+      }
+    }
+
+    .checkbox {
+      width: 25px;
+      height: 25px;
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .close-container {
+    padding: 10px;
+
+    .close-text {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .order-popup {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .order-checkout .order-card {
+      padding: 25px 15px 35px;
+    }
+  }
+
+  .close-container {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+
+    .close-icon {
+      width: 30px;
+      height: 30px;
     }
   }
 }
