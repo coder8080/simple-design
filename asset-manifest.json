@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/simple-design/static/css/main.a7de91d8.css",
-    "main.js": "/simple-design/static/js/main.6bd9910f.js",
-    "static/media/hero.png": "/simple-design/static/media/hero.6ca3c70187e54a2462de.png",
+    "main.css": "/simple-design/static/css/main.6156b0ef.css",
+    "main.js": "/simple-design/static/js/main.3fc4658c.js",
+    "static/media/hero.png": "/simple-design/static/media/hero.d639e5e1198a39f88642.png",
     "static/media/room1.png": "/simple-design/static/media/room1.528e891b200bb905ec3d.png",
     "static/media/childrens-blue.png": "/simple-design/static/media/childrens-blue.32fbc1984f715e624afd.png",
     "static/media/livingroom-ira.png": "/simple-design/static/media/livingroom-ira.3121d97c0588f21cb248.png",
@@ -33,11 +33,11 @@
     "static/media/checkmark.svg": "/simple-design/static/media/checkmark.a1c5feaa8e768287b47cfa95322add9c.svg",
     "index.html": "/simple-design/index.html",
     "static/media/menu.svg": "/simple-design/static/media/menu.a487a9db9d274585b7ecb765aff4e6e2.svg",
-    "main.a7de91d8.css.map": "/simple-design/static/css/main.a7de91d8.css.map",
-    "main.6bd9910f.js.map": "/simple-design/static/js/main.6bd9910f.js.map"
+    "main.6156b0ef.css.map": "/simple-design/static/css/main.6156b0ef.css.map",
+    "main.3fc4658c.js.map": "/simple-design/static/js/main.3fc4658c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a7de91d8.css",
-    "static/js/main.6bd9910f.js"
+    "static/css/main.6156b0ef.css",
+    "static/js/main.3fc4658c.js"
   ]
 }
