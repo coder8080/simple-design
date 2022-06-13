@@ -79,7 +79,6 @@
         top: 0;
         right: -100%;
         height: 100vh;
-        width: 70vw;
         background-color: var(--white-color);
         display: flex;
         flex-direction: column;
@@ -88,6 +87,7 @@
         padding: 3rem 1.5rem 2rem;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         transition: 0.3s;
+        width: 230px;
 
         &.opened {
           right: 0;
