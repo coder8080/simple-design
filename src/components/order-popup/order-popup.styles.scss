@@ -1,0 +1,222 @@
+.order-popup-container {
+  position: fixed;
+  top: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  left: 0;
+  width: 100vw;
+  z-index: var(--z-fixed);
+  overflow: scroll;
+
+  &.opened {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  background-color: var(--white-color);
+  padding: 10px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 37px rgba(0, 0, 0, 0.1);
+
+  .close-text {
+    font-weight: var(--weight-medium);
+    color: rgba(40, 40, 40, 0.7);
+  }
+
+  .close-icon {
+    transform: rotate(45deg);
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.order-popup {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 'description checkout';
+  gap: 60px;
+  background-color: var(--white-color);
+  padding: 50px 50px 0;
+  max-height: 100vh;
+  overflow: scroll;
+
+  .order-section {
+    padding-bottom: 40px;
+  }
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .checkbox {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .order-description {
+    grid-area: description;
+    display: flex;
+    flex-direction: column;
+
+    .items-list {
+      list-style: none;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        .heading {
+          display: grid;
+          grid-template-columns: auto 1fr auto;
+          align-items: center;
+          gap: 1rem;
+
+          .item-title {
+            font-weight: var(--weight-medium);
+            color: var(--first-color);
+          }
+
+          .price {
+            font-weight: var(--weight-medium);
+          }
+        }
+
+        .description-items,
+        .description {
+          padding-left: calc(40px + 2.8rem);
+          color: rgb(19, 19, 19);
+        }
+
+        .description-items {
+          list-style: initial;
+        }
+      }
+    }
+
+    .section-title {
+      font-weight: var(--weight-semi-bold);
+    }
+
+    .order-items {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ordered-styles {
+      .styles-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+    }
+  }
+
+  .order-checkout {
+    grid-area: checkout;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .order-card {
+      padding: 50px;
+      background-color: var(--card-background);
+      border-radius: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .order-items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .item,
+        .text-container {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+        }
+
+        .item {
+          gap: 1rem;
+        }
+
+        .text-container {
+          justify-content: space-between;
+          flex: 1;
+
+          .title,
+          .price {
+            font-size: var(--h3-font-size);
+            line-height: var(--h3-line-height);
+            font-weight: var(--weight-medium);
+          }
+
+          .title {
+            color: rgba(189, 112, 72, 1);
+          }
+
+          .price {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+
+      .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: var(--h3-font-size);
+        font-weight: var(--weight-semi-bold);
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        gap: 1rem;
+      }
+
+      .offer-note {
+        font-size: var(--normal-font-size);
+        line-height: var(--normal-line-height);
+        font-weight: var(--weight-medium);
+        color: rgba(38, 38, 38, 0.5);
+
+        .offer {
+          color: var(--first-color);
+        }
+      }
+    }
+
+    .order-note {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3em;
+      font-weight: var(--weight-medium);
+      color: rgba(38, 38, 38, 0.5);
+      padding: 0 30px;
+    }
+  }
+}

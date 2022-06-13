@@ -1,0 +1,28 @@
+.room-style {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+
+  .text-container {
+    font-size: var(--h3-font-size);
+    font-weight: var(--weight-medium);
+
+    .room-style-title {
+      color: rgba(38, 38, 38, 0.5);
+      margin-right: 0.3em;
+    }
+
+    .room-style-style {
+      color: var(--first-color);
+    }
+  }
+
+  .remove-container {
+    .remove {
+      transform: rotate(45deg);
+      height: 1.5em;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 {
   "name": "simple-design",
+  "homepage": "https://coder8080.github.io/simple-design",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-router-dom": "6",
     "react-scripts": "5.0.1",
     "swiper": "^8.2.2",
     "typescript": "^4.4.2",
