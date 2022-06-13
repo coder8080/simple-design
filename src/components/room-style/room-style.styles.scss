@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: 300px;
+  width: 270px;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
 
   .text-container {
     font-size: var(--h3-font-size);

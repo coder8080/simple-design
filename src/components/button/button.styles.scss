@@ -13,4 +13,10 @@
     background-color: rgba(255, 221, 203, 1);
     color: rgba(189, 112, 72, 1);
   }
+
+  @media screen and (max-width: 370px) {
+    padding: 28px 10px;
+    width: 100%;
+    min-width: 230px;
+  }
 }
