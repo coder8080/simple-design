@@ -6,7 +6,9 @@ interface ButtonProps {
   isLight?: boolean
 }
 const Button: FC<ButtonProps> = ({ children, isLight = false }) => (
-  <button className={`btn${isLight ? ' light' : ''}`}>{children}</button>
+  <button className={`btn clickable${isLight ? ' light' : ''}`}>
+    {children}
+  </button>
 )
 
 export default Button

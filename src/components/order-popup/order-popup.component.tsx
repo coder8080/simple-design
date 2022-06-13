@@ -150,7 +150,7 @@ const OrderPopup: FC<OrderPopupProps> = ({ isOpened, close }) => (
         </div>
       </div>
     </div>
-    <div className="close-container" onClick={close}>
+    <div className="close-container clickable" onClick={close}>
       <span className="close-text h3">Закрыть</span>
       <img src={Plus} alt="Close" className="close-icon" />
     </div>

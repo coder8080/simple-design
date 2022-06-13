@@ -114,3 +114,13 @@ a {
   width: 100vw;
   grid-area: content;
 }
+
+.clickable {
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}

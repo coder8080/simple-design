@@ -13,7 +13,7 @@ const RoomStyle: FC<RoomStyleProps> = ({ roomTitle, styleName }) => (
       <span className="room-style-title">{roomTitle}:</span>
       <span className="room-style-style">{styleName}</span>
     </div>
-    <div className="remove-container">
+    <div className="remove-container clickable">
       <img className="remove" src={Plus} alt="Remove" />
     </div>
   </div>
