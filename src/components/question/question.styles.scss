@@ -1,19 +1,6 @@
 .question {
   margin-bottom: 1rem;
 
-  &.opened {
-    .heading .button-container .plus {
-      transform: rotate(45deg);
-      path {
-        fill: var(--first-color);
-      }
-    }
-
-    .content {
-      height: auto;
-    }
-  }
-
   .heading {
     cursor: pointer;
     display: inline-flex;
@@ -27,6 +14,7 @@
         transition: 0.3s;
         fill: black;
       }
+
       transition: 0.3s;
       cursor: pointer;
     }
@@ -40,6 +28,25 @@
     .text {
       font-weight: var(--weight-medium);
       color: rgba(38, 38, 38, 0.7);
+    }
+  }
+
+  &.opened {
+    .heading .button-container .plus {
+      transform: rotate(45deg);
+      path {
+        fill: var(--first-color);
+      }
+    }
+
+    .content {
+      height: auto;
+    }
+  }
+
+  &:not(.opened):hover {
+    .heading .button-container .plus {
+      transform: rotate(10deg);
     }
   }
 }

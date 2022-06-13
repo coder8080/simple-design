@@ -1,5 +1,7 @@
 import { FC, useState } from 'react'
 
+import { animated } from 'react-spring'
+
 import CheckList from '../../assets/checklist.png'
 import Button from '../../components/button/button.component'
 import RoomsPreview from '../../components/rooms-preview/rooms-preview.component'
@@ -19,21 +21,36 @@ import Drawing1 from '../../assets/drawing-1.png'
 import Drawing2Background from '../../assets/drawing2-background.png'
 import Drawing2 from '../../assets/drawing-2.png'
 
+import useBoop from '../../hooks/useBoop'
+
 import './homepage.styles.scss'
 
 const Homepage: FC = () => {
   const [isPopupOpened, setIsPopupOpened] = useState(false)
+  const [cartBoopStyle, cartBoopTrigger] = useBoop({
+    rotation: 20,
+    duration: 200,
+  })
   return (
     <div className="homepage page">
       <section className="section home">
         <div className="hero">
-          <div className="order" onClick={() => setIsPopupOpened(true)}>
+          <div
+            className="order"
+            onClick={() => setIsPopupOpened(true)}
+            onMouseEnter={cartBoopTrigger}
+          >
             <div className="text-container">
               <span className="order-title">Мой заказ</span>
               <span className="order-summary">3 x 29 000тг</span>
             </div>
             <div className="icon-container">
-              <img src={Bag} alt="Shopping bag" className="bag" />
+              <animated.img
+                style={cartBoopStyle}
+                src={Bag}
+                alt="Shopping bag"
+                className="bag"
+              />
             </div>
           </div>
           <div className="content">
