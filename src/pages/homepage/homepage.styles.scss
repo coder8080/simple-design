@@ -501,4 +501,20 @@
       }
     }
   }
+
+  @media screen and (max-width: 350px) {
+    .section-padding {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .our-services .design-container .points-container {
+      padding-left: 30px;
+    }
+
+    .what-you-like .what-you-like-container {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
 }
